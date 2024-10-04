@@ -1,0 +1,16 @@
+Difference between @RestController and @Controller?
+@Rescontroller responses will be of http response view, where as controller response will be string and we need to add one more annotation(@ResponseBody)
+  @Controller
+    Purpose: Used to mark a class as a Spring MVC controller.
+    Usage: Typically used in traditional web applications to return views (like JSP, Thymeleaf).
+    Return Type: Methods in a @Controller can return a ModelAndView object, which includes both the model data and the view name.
+                 for it to get requires pattern response
+  @RestController
+    Purpose: A specialized version of @Controller used to create RESTful web services.
+    Usage: Combines @Controller and @ResponseBody, meaning that the return value of the methods is directly written to the HTTP response body.
+    Return Type: Methods in a @RestController typically return data (like JSON or XML) directly.
+2.Advantage of spring over spring mvc?
+3.Design pattern related questions?
+Transaction propagation in springboot?
+Given Employee and department class, without modifying these classes how can we establise relationship 
+between these two, so that department can hold all of its employees and we can return all of its employee given department object.
