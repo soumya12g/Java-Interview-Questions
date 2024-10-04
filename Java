@@ -1,0 +1,27 @@
+1. What is Finally block and why is it used?
+  The finally block is a crucial part of exception handling, it is in conjuction with try ctach block, which will be executed no matter what will be the outcome from try/catch.
+  uses : Gauranteed executed of code
+  Use case : relase of resources like memory release or closing of files, closing of database connections etc.
+2. Exception propagation in java?
+  Propogating of the exception up to the call stack from the point it is being thrown to the catch block where it will be handled rightly according to the requirement.
+3. How HashMap Works?
+3 .What is functional interface?
+4. Difference between flatMap and map ?
+  The main difference between map and flatMap lies in how they handle the transformation of data:
+  
+   map: Transforms each element individually, preserving the nested structure.
+   flatMap: Flattens the nested structure into a single stream before applying the transformation.
+
+5.Can Java class be static?
+  No, only nested classes can be static
+6.Can Java class be final
+   Yes, a Java class can be declared as final. When a class is marked as final, it cannot be subclassed, meaning no other class can extend it. 
+  This is useful when you want to prevent inheritance for security reasons or to ensure the class’s implementation remains unchanged1
+7. Can Java Class be private?
+  No, but inner classes can be.
+8. Can Static, Private or final methods be overriden?
+  Static Methods: Static methods cannot be overridden. If you declare a static method with the same signature in a subclass, it hides the static method in the superclass, 
+                  but this is not considered overriding. This is known as method hiding12.
+  Private Methods: Private methods cannot be overridden because they are not accessible outside the class they are declared in. 
+                  If you declare a method with the same signature in a subclass, it is treated as a new method in the subclass, not an overridden one34.
+  Final Methods: Final methods cannot be overridden. The final keyword prevents a method from being overridden to ensure that the method’s behavior remains unchanged in subclasses
